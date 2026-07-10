@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">  
+  </head>
+
+  <body>
+    <h1 id="title">Survey form</h1>
+<p id="description">Thank you for giving us your time.</p>
+<form id="survey-form" action="thanks.html" method="GET">
+  <label for="name" id="name-label">Name:</label>
+    <input 
+    type="text" id="name" name="name"
+    placeholder="Enter your name"
+    required><br>
+<label for="email" id="email-label">Email:</label>
+<input 
+type="email" name="email" id="email"
+placeholder="Enter your email address"
+required><br>
+<label for="age" id="number-label">Age:</label>
+<input type="number" name="age" id="number"
+min="3" max="100" placeholder="your age" required><br><br>
+Which describes you currently?<br><br>
+<select id="dropdown">
+  <option value="student">Student</option>
+  <option value="graduate">Graduate</option>
+  <option value="unemployed">Unemployed</option>
+  <option value="working">working</option>
+  </select><br><br>
+ <section> How did u hear about us?<br><br>
+  <div id="radio">
+  <input type="radio" name="ads" value="Youtube">
+  <label for="ads">Youtube</label>
+  <input type="radio" name="ads" value="Tiktok">
+  <label for="ads">Tiktok</label>
+    <input type="radio" name="ads" value="Facebook">
+  <label for="teacher">Facebook</label>
+   <input type="radio" name="ads" value="others">
+  <label for="teacher">Others</label>
+  </div>
+  </section><br><br>
+  Will you recommend us to others?<br><br>
+  <div id="recommend">
+  <input type="radio" name="recommend" value="yes">
+  <label for="yes-option">Yes</label>
+   <input type="radio" name="recommend" value="no">
+  <label for="no-option">No</label>
+  </div><br><br>
+Feedback:
+  <textarea></textarea><br><br>
+<input type="submit" value="Submit"><label for="submit"></label>
+<button type="reset" id="reset">Reset</button>
+  </form>
+  <script src="index.js"></script>
+  </body>
+</html>
+
